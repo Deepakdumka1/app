@@ -1,0 +1,41 @@
+.chat-layout {
+  height: calc(100vh - 64px);
+  padding: 1rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8edf5 100%);
+}
+
+.sidebar-container,
+.chat-container,
+.group-panel-container {
+  height: calc(100vh - 96px);
+  overflow: hidden;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mobile-menu-button {
+  position: fixed;
+  top: 72px;
+  left: 16px;
+  z-index: 1000;
+  background: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mobile-sidebar .MuiDrawer-paper {
+  width: 320px;
+  background: white;
+}
+
+.mobile-chat-window {
+  height: calc(100vh - 64px);
+  background: white;
+}
+
+@media (max-width: 960px) {
+  .chat-layout {
+    padding: 0;
+  }
+} 

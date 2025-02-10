@@ -1,0 +1,147 @@
+.resources-container {
+  padding: 2rem 0;
+  min-height: calc(100vh - 64px);
+  margin: 4%;
+}
+
+.resources-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-weight: 700;
+  background: linear-gradient(45deg, #1a237e, #0d47a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.upload-button {
+  background: linear-gradient(45deg, #1a237e, #0d47a1) !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 25px !important;
+  text-transform: none !important;
+  transition: transform 0.3s ease !important;
+}
+
+.upload-button:hover {
+  transform: translateY(-2px);
+}
+
+.filters-paper {
+  padding: 1rem;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  transition: all 0.3s ease !important;
+}
+
+.tag:hover {
+  background: rgba(26, 35, 126, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+.selected-tag {
+  background: linear-gradient(45deg, #1a237e, #0d47a1) !important;
+  color: white !important;
+}
+
+.resources-paper {
+  padding: 1rem;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+.search-input {
+  margin-bottom: 1rem !important;
+}
+
+.search-input .MuiOutlinedInput-root {
+  border-radius: 25px !important;
+}
+
+.resources-list {
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.resource-item {
+  border-radius: 8px !important;
+  margin-bottom: 0.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.resource-item:hover {
+  background: rgba(0, 0, 0, 0.04) !important;
+  transform: translateX(4px);
+}
+
+.file-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.file-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.file-tag {
+  background: rgba(26, 35, 126, 0.1) !important;
+  font-size: 0.75rem !important;
+}
+
+.file-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.preview-container {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.upload-progress {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 960px) {
+  .resources-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .filters-paper {
+    margin-bottom: 1rem;
+  }
+} 

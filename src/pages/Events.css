@@ -1,0 +1,151 @@
+.events-container {
+  padding: 2rem 0;
+  min-height: calc(100vh - 64px);
+  margin: 4%;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  font-weight: 700;
+  background: linear-gradient(45deg, #1a237e, #0d47a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.create-button {
+  background: linear-gradient(45deg, #1a237e, #0d47a1) !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 25px !important;
+  text-transform: none !important;
+  transition: transform 0.3s ease !important;
+}
+
+.create-button:hover {
+  transform: translateY(-2px);
+}
+
+.calendar-paper {
+  padding: 1rem;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card {
+  padding: 1.5rem;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event-type-icon {
+  padding: 0.5rem;
+  border-radius: 12px;
+  background: rgba(26, 35, 126, 0.1);
+  color: #1a237e;
+}
+
+.event-title {
+  flex: 1;
+  font-weight: 600;
+}
+
+.registration-status {
+  background: linear-gradient(45deg, #4caf50, #81c784) !important;
+  color: white !important;
+}
+
+.event-description {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem;
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.event-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-tag {
+  background: rgba(26, 35, 126, 0.1) !important;
+}
+
+.event-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-button {
+  background: linear-gradient(45deg, #1a237e, #0d47a1) !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
+}
+
+.no-events {
+  padding: 3rem;
+  text-align: center;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 960px) {
+  .events-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .calendar-paper {
+    margin-bottom: 1rem;
+  }
+
+  .event-details {
+    flex-direction: column;
+  }
+} 
